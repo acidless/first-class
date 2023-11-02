@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <title>Карточка автомобиля</title>
+    <meta name="description"
+          content="Наш сайт по аренде автомобилей – это ваш надежный партнер в мире комфортного и удобного перемещения по городу или в поездках. У нас вы найдете широкий выбор авто любых классов и марок, а также опции аренды по самым выгодным ценам."/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="/img/favicons/favicon.ico" sizes="any">
+    <link rel="icon" href="/img/favicons/favicon.svg" type="image/svg+xml">
+    <link rel="shortcut icon" href="/img/favicons/short-icon-16.png" sizes="16x16">
+    <link rel="shortcut icon" href="/img/favicons/short-icon-32.png" sizes="32x32">
+    <link rel="shortcut icon" href="/img/favicons/short-icon-192.png" sizes="192x192">
+    <link rel="apple-touch-icon" href="/img/favicons/apple-touch-icon-76.png" sizes="76x76">
+    <link rel="apple-touch-icon" href="/img/favicons/apple-touch-icon-120.png" sizes="120x120">
+    <link rel="apple-touch-icon" href="/img/favicons/apple-touch-icon-152.png" sizes="152x152">
+    <link rel="apple-touch-icon" href="/img/favicons/apple-touch-icon-180.png" sizes="180x180">
+    <link rel="image_src" href="img/bmw.png"/>
+    <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+    <link href="https://cdn.jsdelivr.net/npm/air-datepicker@3.4.0/air-datepicker.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/car-card.css">
+</head>
+<body>
+<div class="warper">
+    <header class="header">
+        <div class="header__container">
+            <div class="container__logo">
+                <a href="index.php">
+                    <img class="logo-img" src="/img/logo/logo.svg">
+                </a>
+            </div>
+            <div class="header___menu menu">
+                <div class="menu__icon">
+                    <span></span>
+                </div>
+                <nav class="menu__body">
+                    <ul class="menu__list underline">
+                        <li>
+                            <a href="/index.php" class="menu__link">Главная</a>
+                        </li>
+                        <li>
+                            <a href="/autopark.php" class="menu__link">Автопарк</a>
+                        </li>
+                        <li>
+                            <a href="/index.html" class="menu__link">Условия</a>
+                        </li>
+                        <li>
+                            <a href="/contacts.html" class="menu__link">Контакты</a>
+                        </li>
+                        <li>
+                            <a href="/chose.html" class="menu__link">Партнерам</a>
+                        </li>
+                        <li class="menu_network">
+                            <a href="tg://resolve?domain=autoprokat72/" target="_blank"><img src="/img/TG-1.svg"></a>
+                            <a href="https://vk.com/tyum_auto" target="_blank"><img src="/img/vk-1.svg"></a>
+                            <a href="https://wa.me/79088672559" target="_blank"><img src="/img/wh-1.svg"></a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="menu-info">
+                <div class="call-btn">
+                    <a href="tel:+7 (345) 238-83-11" class="menu-info-phone">+7 (345) 238-83-11</a>
+                </div>
+                <div class="call-btn-mob">
+                    <a href="tel:+7 (345) 238-83-11" class="menu-info-phone">
+                        <svg width="23" height="24" viewBox="0 0 23 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M6.34829 0.823948C6.34829 0.823948 5.97329 0 5.40056 0C4.83692 0 4.54374 0.244093 4.34829 0.412507C4.15283 0.580921 0.882377 3.1018 0.882377 3.1018C0.882377 3.1018 -0.0687594 3.88097 0.00396785 5.3466C0.0653315 6.81223 0.371013 8.89821 1.95738 11.8039C3.53238 14.7032 7.47442 19.1331 9.96533 20.6904C9.96533 20.6904 12.2733 22.351 14.421 23.0258C15.0449 23.2102 16.2926 23.45 16.5835 23.45C16.879 23.45 17.4006 23.45 17.9994 23.0396C18.6085 22.625 22.0256 20.0476 22.0256 20.0476C22.0256 20.0476 22.8619 19.3388 21.8903 18.5148C20.9142 17.6909 17.9506 15.8586 17.3165 15.3768C16.6812 14.8876 15.7767 15.1029 15.3858 15.4344C14.996 15.768 14.2994 16.3169 14.2142 16.3862C14.0869 16.4779 13.7381 16.7753 13.3471 16.6271C12.8494 16.4427 10.8085 15.4035 8.91647 12.9753C7.03579 10.5493 6.82897 9.75627 6.54829 8.89928C6.50068 8.77259 6.50003 8.63454 6.54642 8.50746C6.59282 8.38038 6.68356 8.27169 6.80397 8.19897C7.08579 8.01564 8.12329 7.20448 8.12329 7.20448C8.12329 7.20448 8.79488 6.58306 8.5142 5.85078C8.23351 5.1185 6.34829 0.823948 6.34829 0.823948Z"
+                                  fill="white"/>
+                        </svg>
+                    </a>
+                </div>
+                <a href="#" class="menu-info-form">
+                    <span>Оставить заявку</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="13" height="12" viewBox="0 0 13 12" fill="none">
+                        <path d="M12.0499 0.999929C12.0499 0.447644 11.6022 -7.16421e-05 11.0499 -7.12206e-05L2.04988 -7.10942e-05C1.49759 -7.14314e-05 1.04988 0.447644 1.04988 0.999929C1.04988 1.55221 1.49759 1.99993 2.04988 1.99993L10.0499 1.99993L10.0499 9.99993C10.0499 10.5522 10.4976 10.9999 11.0499 10.9999C11.6022 10.9999 12.0499 10.5522 12.0499 9.99993L12.0499 0.999929ZM1.70711 11.7569L11.757 1.70704L10.3428 0.292822L0.292893 10.3427L1.70711 11.7569Z"
+                              fill="#0062C5"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </header>
+</div>
+<main>
+    <div class="car-type-container">
+        <div class="car-type">
+            <ul class="breadcrumbs">
+                <li><a href="/index.php">Главная</a></li>
+                <li><a href="/autopark.php">Автопарк</a></li>
+                <li>BMW</li>
+            </ul>
+            <h1>BMW 520 xDrive</h1>
+            <div class="car-type-content">
+                <div class="car-type-left-block">
+                    <div id="car-type-images" class="car-type-images">
+                        <div class="car-type-slider-main">
+                            <div class="swiper">
+                                <div class="swiper-wrapper swiper-slides">
+                                    <div class="swiper-slide"><img src="/img/cars/bmw520-1.webp" alt="BMW 520 xDrive"/></div>
+                                    <div class="swiper-slide"><img src="img/cars/bmw520-2.webp" alt="BMW 520 xDrive"/></div>
+                                    <div class="swiper-slide"><img src="img/cars/bmw520-4.webp" alt="BMW 520 xDrive"/></div>
+                                    <div class="swiper-slide"><img src="img/cars/bmw520-5.webp" alt="BMW 520 xDrive"/></div>
+                                    <div class="swiper-slide"><img src="img/cars/bmw520-6.webp" alt="BMW 520 xDrive"/></div>
+                                    <div class="swiper-slide"><img src="img/cars/bmw520-7.webp" alt="BMW 520 xDrive"/></div>
+                                    <div class="swiper-slide"><img src="img/cars/bmw520-8.webp" alt="BMW 520 xDrive"/></div>
+                                    <div class="swiper-slide"><img src="img/cars/bmw520-9.webp" alt="BMW 520 xDrive"/></div>
+                                    <div class="swiper-slide"><img src="img/cars/bmw520-10.webp" alt="BMW 520 xDrive"/></div>
+                                    <div class="swiper-slide"><img src="img/cars/bmw520-11.webp" alt="BMW 520 xDrive"/></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-container gallery-thumbs">
+                            <div class="swiper-wrapper swiper-slider-thumbs">
+                            </div>
+                            <button class="swiper-next">
+                                <img src="img/icons/arrow.svg" alt="">
+                            </button>
+                        </div>
+                    </div>
+                    <hr class="crossline">
+                    <div class="car-type-features-wrapper">
+                        <h2>Характеристики</h2>
+                        <div class="car-type-block car-type-features">
+                            <div class="car-type-feature">
+                                <img src="img/icons/calendar.svg" alt="">
+                                <p>2021</p>
+                            </div>
+                            <div class="car-type-feature">
+                                <img src="img/icons/timer.svg" alt="">
+                                <p>3.2 сек.</p>
+                            </div>
+                            <div class="car-type-feature">
+                                <img src="img/icons/speed.svg" alt="">
+                                <p>290 км/ч</p>
+                            </div>
+                            <div class="car-type-feature">
+                                <img src="img/icons/profile.svg" alt="">
+                                <p>5 местный</p>
+                            </div>
+                            <div class="car-type-feature">
+                                <img src="img/icons/engine.svg" alt="">
+                                <p>4.0 л.</p>
+                            </div>
+                            <div class="car-type-feature">
+                                <img src="img/icons/gear-box.svg" alt="">
+                                <p>Автомат</p>
+                            </div>
+                            <div class="car-type-feature">
+                                <img src="img/icons/transmission.svg" alt="">
+                                <p>Полный</p>
+                            </div>
+                            <div class="car-type-feature">
+                                <img src="img/icons/gas.svg" alt="">
+                                <p>Бензин</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h2>Период аренды</h2>
+                    <div class="date-range-picker">
+                        <input type="text">
+                        <img src="img/icons/calendar.svg" alt="">
+                    </div>
+                    <div class="car-type-block">
+                        <h3>Стоимость аренды</h3>
+                        <hr>
+                        <div class="car-type-options">
+                            <div class="car-type-option">
+                                <p>1-2 суток</p>
+                                <p>10.000 ₽</p>
+                            </div>
+                            <div class="car-type-option">
+                                <p>3-7 суток</p>
+                                <p>20.000 ₽</p>
+                            </div>
+                            <div class="car-type-option">
+                                <p>8-14 суток</p>
+                                <p>30.000 ₽</p>
+                            </div>
+                            <div class="car-type-option">
+                                <p>Более</p>
+                                <p>Договорная</p>
+                            </div>
+                            <hr>
+                            <div class="car-type-option">
+                                <p>Личный водитель</p>
+                                <p>По запросу</p>
+                            </div>
+                            <hr>
+                            <div class="car-type-option">
+                                <p>Залог</p>
+                                <p>50.000 руб.</p>
+                            </div>
+                            <hr>
+                            <div class="car-type-option">
+                                <p>Итоговая стоимость</p>
+                                <p><strong>130.000 руб.</strong></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="car-type-actions">
+                        <button class="btn-primary">Забронировать</button>
+                        <button class="btn-secondary">Заказать звонок</button>
+                    </div>
+                </div>
+            </div>
+            <hr class="crossline">
+        </div>
+    </div>
+</main>
+<footer class="section section-footer">
+    <div class="footer">
+        <div class="footer-main-content">
+            <div class="logo">
+                <p class="info">Всегда <br> на связи</p>
+                <p class="uner-info"><a href="mailto:info@autoprokat72.ru">info@autoprokat72.ru</a></p>
+            </div>
+            <div class="footer-information">
+                <div class="footer-title">Информация</div>
+                <div class="footer-subtitle"><a href="/index.html">Условия</a></div>
+                <div class="footer-subtitle"><a href="/contacts.html">Контакты</a></div>
+                <div class="footer-subtitle"><a href="/autopark.php">Автопарк</a></div>
+            </div>
+            <div class="footter-page-links">
+                <div class="footer-title">Полезные ссылки</div>
+                <div class="footer-subtitle"><a href="/privacy.pdf">Политика конфиденциальности</a></div>
+                <div class="footer-subtitle">Интеграции</div>
+                <div class="footer-subtitle">Решения</div>
+            </div>
+            <div class="footter-contacts">
+                <div class="footer-title">Контакты</div>
+                <div class="footer-subtitle"><a href="mailto:info@autoprokat72.ru">info@autoprokat72.ru</a></div>
+                <div class="footer-subtitle"><a href="tel:+7 (345) 238-83-11">+7 (345) 238-83-11</a></div>
+                <div class="footer-subtitle"><a href="https://yandex.ru/maps/-/CCUojVrPoA">Тюмень, улица Дмитрия
+                    Менделеева, 18</a></div>
+            </div>
+        </div>
+        <div class="company-information">
+            <div class="line-div"></div>
+            <div class="company-information-links">
+                <div class="text-18-suisse grey">© 2023 Все права защищены</div>
+                <a href="https://outsend.ru/" class="text-18-suisse" target="_blank">Made by «Outsend»</a>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="footer-mobile">
+        <div class="footer-mobile-address">
+            <div class="logo-mobile">
+                <p class="info-mobile">Всегда <br> на связи</p>
+                <p class="footer-mail-link"><a href="mailto:info@autoprokat72.ru">info@autoprokat72.ru</a></p>
+            </div>
+            <div class="fotter-grid-block">
+                <div class="footer-address-title">
+                    <div class="text-18-suisse-book">Информация</div>
+                    <div class="text-18-suisse grey"><a href="/index.html">Условия</a></div>
+                    <div class="text-18-suisse grey"><a href="/contacts.html">Контакты</a></div>
+                    <div class="text-18-suisse grey"><a href="/autopark.php">Автопарк</a></div>
+                </div>
+                <div class="footer-address-title">
+                    <div class="text-18-suisse-book">Полезные ссылки</div>
+                    <div class="text-18-suisse grey"><a href="/privacy.pdf">Политика конфиденциальности</a></div>
+                    <div class="footer-subtitle"><a href="#">Для бизнеса</a></div>
+                    <div class="footer-subtitle"><a href="#">Сдать авто в аренду</a></div>
+                </div>
+                <div class="footer-mobile-socials">
+                    <div class="text-18-suisse-book">Контакты</div>
+                    <a href="tel:+7 (345) 238-83-11" aria-current="page" class="text-18-suisse w--current">+7 (345)
+                        238-83-11</a>
+                    <a href="mailto:info@autoprokat72.ru" class="text-18-suisse">info@autoprokat72.ru</a>
+                    <a href="https://yandex.ru/maps/-/CCUojVrPoA" class="text-18-suisse">Тюмень, улица Дмитрия
+                        Менделеева, 18</a>
+                </div>
+                <div class="footer-mobile-socials">
+                    <div class="text-18-suisse-book">Соц сети</div>
+                    <a href="https://vk.com/tyum_auto" target="_blank" class="text-18-suisse">Vkontakte</a>
+                    <a href="tg://resolve?domain=autoprokat96" target="_blank" class="text-18-suisse">Telegram</a>
+                    <a href="https://wa.me/79088672559" class="text-18-suisse">Whatsapp</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="line-div"></div>
+
+        <div class="footer-mobile-label">
+            <a href="#" class="text-18-suisse">Made by «Outsend»</a>
+            <div class="text-18-suisse grey">© 2023 Все права защищены</div>
+        </div>
+    </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/air-datepicker@3.4.0/air-datepicker.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
